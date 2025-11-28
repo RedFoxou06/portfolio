@@ -40,51 +40,6 @@ header.hidden {
   transform: translateY(-120%);
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark-text);
-  font-weight: 600;
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.3s, transform 0.3s;
-  z-index: 1;
-  white-space: nowrap;
-}
-
-nav a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--primary);
-  z-index: -1;
-  transition: left 0.3s;
-}
-
-nav a:hover {
-  color: var(--light-text);
-  transform: translateY(-2px);
-}
-
-nav a:hover::before {
-  left: 0;
-}
-
 .lang-btn {
   position: absolute;
   right: 2rem;
@@ -359,15 +314,6 @@ form button {
   margin-top: 1rem;
 }
 
-/* Footer */
-footer {
-  background: var(--dark-text);
-  color: var(--light-text);
-  text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-
 #logo_homepage {
   display: block;
   height: 7%;
@@ -402,26 +348,6 @@ footer {
 @media (max-width: 768px) {
   header {
     padding: 0.5rem 0;
-  }
-
-  nav {
-    gap: 0.8rem;
-    padding: 0 1rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    flex-wrap: nowrap;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    justify-content: flex-start;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  nav a {
-    padding: 0.6rem 1rem;
-    font-size: 0.85rem;
   }
 
   .lang-btn {
@@ -502,17 +428,6 @@ footer {
     font-size: 1rem;
   }
 
-  nav {
-    gap: 0.5rem;
-    justify-content: space-between;
-  }
-
-  nav a {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.8rem;
-    border-radius: 20px;
-  }
-
   .lang-btn {
     position: static;
   }
@@ -589,22 +504,9 @@ footer {
     font-size: 0.8rem;
     border-radius: 20px;
   }
-
-  footer {
-    padding: 1.5rem 1rem;
-    margin-top: 1rem;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 320px) {
-  nav a {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.75rem;
-  }
 
   .lang-btn {
     position: static;
