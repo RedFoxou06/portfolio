@@ -1,15 +1,20 @@
-/* Variables CSS */
 :root {
     --primary: #8cd7ff;
     --secondary: #e6f3ff;
     --light-text: #fff;
     --dark-text: #2c3e50;
+    --card-bg: rgba(255, 255, 255, 0.95);
+
     --gradient-bg: linear-gradient(135deg, #8cd7ff 0%, #e6f3ff 100%);
+
     --shadow: 0 10px 30px rgba(140, 215, 255, 0.3);
     --hover-shadow: 0 15px 40px rgba(140, 215, 255, 0.4);
+
+    --tag-bg: #fff;
+    --tag-border: #bce6ff;
+    --tag-hover: #e6f3ff;
 }
 
-/* Reset et base */
 * {
     margin: 0;
     padding: 0;
@@ -45,160 +50,390 @@ header.hidden {
     right: 2rem;
 }
 
-/* Section GitHub Link */
-#github-link {
-    padding: 6rem 2rem 2rem;
+.intro-section {
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-/* Bouton GitHub spécifique */
-.github-btn {
-    background: linear-gradient(45deg, #24292e 0%, #0366d6 100%) !important;
-    color: var(--light-text) !important;
-    border: none;
-    padding: 1rem 2.5rem;
-    margin-bottom: 1vh;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 25px rgba(3, 102, 214, 0.3);
+.intro-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    background: #0074cc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 8px rgba(140, 215, 255, 0.3);
+    font-weight: 700;
 }
 
-.github-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(3, 102, 214, 0.4);
-    background: #0366d6 !important;
+.intro-section h1 span {
+    -webkit-text-fill-color: var(--dark-text);
 }
 
-.github-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
-
-.github-btn:hover::before {
-    left: 100%;
-}
-
-/* Section Projets */
-#projects {
-    padding: 4rem 2rem;
-    max-width: 1400px;
-    margin: 2rem auto 0;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 20px;
-    margin-top: 2rem;
-    box-shadow: var(--shadow);
-}
-
-#projects h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+.intro-section p {
+    font-size: 1.3rem;
     color: var(--dark-text);
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.controls-section {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (min-width: 932px) {
+    .controls-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.search-wrapper {
+    margin-bottom: 2rem;
     position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Grille de projets */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+.search-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid var(--secondary);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fff;
+    color: var(--dark-text);
+}
+
+.search-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(140, 215, 255, 0.4);
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-label {
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+
+.tag {
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-border);
+    color: var(--dark-text);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.tag:hover {
+    background: var(--tag-hover);
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+.tag.active {
+    background: var(--primary);
+    color: var(--light-text);
+    border-color: var(--primary);
+    box-shadow: 0 4px 10px rgba(140, 215, 255, 0.4);
+}
+
+.reset-btn {
     margin-top: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--dark-text);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
-/* Cartes de projets unifiées */
+.reset-btn:hover { opacity: 1; color: var(--primary-dark); }
+
+.gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 0 2rem 4rem 2rem;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--light-text);
+    font-weight: 600;
+}
+
 .project-card {
     background: var(--light-text);
     border-radius: 15px;
-    padding: 2rem;
-    box-shadow: var(--shadow);
-    border: 2px solid transparent;
-    position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    border: 2px solid transparent;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     box-shadow: var(--hover-shadow);
     border-color: var(--primary);
 }
 
-/* Images des projets */
-.project-card img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin: 0 auto 1.5rem;
-    display: block;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.card-thumb-box {
+    height: 200px;
+    overflow: hidden;
+    background: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.project-card:hover img {
-    transform: scale(1.1);
+.card-thumb-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.project-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    color: var(--dark-text);
-    text-align: center;
-}
+.project-card:hover .card-thumb-box img { transform: scale(1.08); }
 
-.project-card p {
-    margin-bottom: 1.5rem;
-    opacity: 0.8;
-    line-height: 1.6;
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-tags {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card-tags .tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    background: var(--secondary);
+    border: none;
+    cursor: default;
+}
+
+.card-tags .tag:hover { transform: none; background: var(--secondary); }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal-overlay.active { opacity: 1; visibility: visible; }
+
+.modal-box {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 25px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    position: relative;
+    transform: scale(0.9) translateY(20px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-overlay.active .modal-box { transform: scale(1) translateY(0); }
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    color: var(--dark-text);
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    transition: 0.3s;
+}
+
+.close-modal:hover { color: var(--primary); transform: rotate(90deg); }
+
+.modal-scroll { overflow-y: auto; height: 100%; }
+
+.modal-header-section {
+    background: linear-gradient(to right, #f8fbff, #eef6ff);
+    padding: 3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.modal-header-info h2 {
+    font-size: 2.2rem;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.modal-actions { display: flex; gap: 1rem; }
+
+.btn-modal {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-github { background: #24292e; color: #fff; }
+.btn-github:hover { background: #000; transform: translateY(-2px); }
+
+.btn-web { background: var(--primary); color: #fff; }
+.btn-web:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+.modal-body-section {
+    padding: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-text);
     text-align: justify;
 }
 
-.project-card a {
-    margin-top: auto;
+.modal-gallery-section { padding: 0 3rem 3rem; }
+
+.gallery-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    display: block;
+    color: var(--primary);
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
 }
 
-/* Boutons */
-button {
-    background: var(--primary);
-    color: var(--light-text);
-    border: none;
-    padding: 0.8rem 2rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.screenshots-grid img {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-    }
+.screenshots-grid img:hover { transform: scale(1.02); }
 
-    #projects {
-        margin: 1rem;
-        padding: 3rem 1.5rem;
+@media (max-width: 1024px) {
+    .intro-section h1 {
+        font-size: 3rem;
     }
 }
 
@@ -207,132 +442,46 @@ button {
         padding: 0.5rem 0;
     }
 
-    .lang-btn {
-        position: static;
-        margin-left: auto;
+    .intro-section {
+        padding-top: 8rem;
     }
 
-    #github-link {
-        padding: 5rem 1rem 2rem;
+    .intro-section h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
     }
 
-    .github-btn {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
+    .intro-section p {
+        font-size: 1.1rem;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    #projects {
-        margin: 1rem 0.5rem;
-        padding: 3rem 1.5rem;
-        border-radius: 15px;
-    }
-
-    #projects h2 {
-        font-size: 2rem;
+    .controls-section {
+        padding: 1.5rem;
         margin-bottom: 2rem;
     }
 
-    .project-card {
-        padding: 1.5rem;
+    .gallery-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
     }
 
-    .project-card h3 {
-        font-size: 1.3rem;
+    .modal-header-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
     }
+
+    .modal-header-info h2 { text-align: center; }
+    .modal-tags, .modal-actions { justify-content: center; }
 }
 
 @media (max-width: 480px) {
-    #github-link {
-        padding: 4rem 1rem 1rem;
+    .intro-section h1 {
+        font-size: 1.8rem;
     }
 
-    .github-btn {
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    .lang-btn {
-        position: static;
-    }
-
-    #about {
-        padding: 7rem 1rem 1rem;
-        min-height: 70vh;
-    }
-
-    #projects {
-        margin: 0.5rem;
-        padding: 2rem 1rem;
-        border-radius: 10px;
-    }
-
-    #projects h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1.5rem;
-    }
-
-    #projects h2::after {
-        width: 60px;
-        height: 3px;
-    }
-
-    .project-card {
-        padding: 1rem;
-        border-radius: 10px;
-    }
-
-    .project-card img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .project-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .project-card p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-
-    button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.8rem;
-        border-radius: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-
-    .lang-btn {
-        position: static;
-    }
-
-    #projects {
-        padding: 1.5rem 0.8rem;
-    }
-
-    #projects h2 {
-        font-size: 1.4rem;
-    }
-
-    .project-card {
-        padding: 0.8rem;
-    }
-
-    .project-card img {
-        width: 40px;
-        height: 40px;
-    }
-
-    button {
-        padding: 0.5rem 1rem;
-        font-size: 0.75rem;
+    .intro-section p {
+        font-size: 1rem;
     }
 }

@@ -3,11 +3,11 @@ const projects = [
         id: 1,
         title: "HomePage",
         languages: ["HTML", "CSS", "JS"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["Intellij" , "Git"],
-        thumb: "img/homepage/logo_homepage.png",
-        desc: "Je me suis fait une homepage pour mon pc fixe. Cette homepage me permet d'ouvrir des applications via des boutons accessibles sur la page ou me propose des idées quand je m'ennuie. J'ai également ajouté un mode sombre pour quand il se fait tard.",
-        images: ["img/homepage/mode-clair.png", "img/homepage/mode-sombre.png"],
+        thumb: "../img/homepage/logo_homepage.png", // J'ai ajouté ../ au cas où tu es dans le dossier /en/
+        desc: "I created a homepage for my desktop PC. This homepage allows me to open applications via buttons accessible on the page or suggests ideas when I'm bored. I also added a dark mode for late-night use.",
+        images: ["../img/homepage/mode-clair.png", "../img/homepage/mode-sombre.png"],
         github: "https://github.com/RedFoxou06/HomePage",
         link: "https://homepage.redfoxou.dev"
     },
@@ -15,123 +15,123 @@ const projects = [
         id: 2,
         title: "ValoApp",
         languages: ["Java", "JavaFX", "FXML"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/valorant/logo_valorant.png",
-        desc: "J'ai réalisé une application sur un de mes jeux préféré : Valorant. Il s'agit d'une application de gestion de compte Valorant. Cette application n'est pas finie mais je trouve important de le montrer car la créer m'a beaucoup appris.",
-        images: ["/img/valorant/valorant_1.png"],
+        thumb: "../img/valorant/logo_valorant.png",
+        desc: "I created an application for one of my favorite games: Valorant. It is a Valorant account management app. This application is not finished, but I find it important to show it because creating it taught me a lot.",
+        images: ["../img/valorant/valorant_1.png"],
         github: "https://github.com/RedFoxou06/ValoApp"
     },
     {
         id: 3,
-        title: "Site Valorant",
+        title: "Valorant Website",
         languages: ["HTML", "CSS", "JS"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["Intellij" , "Git"],
-        thumb: "img/site_valo/logo_valorant_site.png",
-        desc: "Un petit site sur Valorant où je présente mes personnages ou maps préférés. J'y présente également mes statistiques sur le jeu ainsi que celle d'un de mes doubles comptes. Je joue quand même à d'autres jeux que Valorant mais c'est certainement un des jeux où j'ai passé le plus de temps et qui compte beaucoup pour moi.",
-        images: ["img/site_valo/site_valo_1.png", "img/site_valo/site_valo_2.png"],
+        thumb: "../img/site_valo/logo_valorant_site.png",
+        desc: "A small website about Valorant where I present my favorite characters or maps. I also present my game statistics as well as those of one of my alt accounts. I do play other games, but it's certainly one where I've spent the most time and means a lot to me.",
+        images: ["../img/site_valo/site_valo_1.png", "../img/site_valo/site_valo_2.png"],
         github: "https://github.com/RedFoxou06/site-valo",
         link: "https://valorant.redfoxou.dev"
     },
     {
         id: 4,
-        title: "Attaque brute force",
+        title: "Brute Force Attack",
         languages: ["Python"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["PyCharm" , "Git" , "ChatGPT"],
-        thumb: "img/brut_force/logo_brut_force.png",
-        desc: "J'aime la cybersécurité et j'ai voulu tester une attaque brut force. J'ai donc fait un programme en Python pour tenter de deviner un mot de passe que j'initialisais. J'ai également demander à ChatGPT un programme similaire mais plus peformant. Comparé nos programmes m'a permis de comprendre certaines erreurs que j'avais commise. Ce projet est éducatif, je ne l’utilise pas pour nuire ni le partager comme outil de hacking.",
-        images: ["img/brut_force/brut_force_1.png", "img/brut_force/brut_force_2.png", "img/brut_force/brut_force_3.png", "img/brut_force/brut_force_4.png"],
+        thumb: "../img/brut_force/logo_brut_force.png",
+        desc: "I love cybersecurity and wanted to test a brute force attack. So I wrote a Python program to attempt to guess a password I initialized. I also asked ChatGPT for a similar but more performant program. Comparing our programs helped me understand certain mistakes I made. This project is educational; I do not use it to harm or share it as a hacking tool.",
+        images: ["../img/brut_force/brut_force_1.png", "../img/brut_force/brut_force_2.png", "../img/brut_force/brut_force_3.png", "../img/brut_force/brut_force_4.png"],
         github: "https://github.com/RedFoxou06/brut_force"
     },
     {
         id: 5,
-        title: "Générateur de mot de passe",
+        title: "Password Generator",
         languages: ["Python"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["VS Code", "Git"],
-        thumb: "img/generateur_mdp/logo_generateur_mdp.png",
-        desc: "Après avoir essayé une attaque brut force à but éducatif. J'ai également cherché à contrer ce genre d'attaque, une des solutions étant d'avoir un mot de passe solide. J'ai donc fait un générateur de mot de passe en python. A voir pour le mettre sur une page html dans le futur.",
-        images: ["img/generateur_mdp/generateur_mdp_1.png", "img/generateur_mdp/generateur_mdp_2.png"],
+        thumb: "../img/generateur_mdp/logo_generateur_mdp.png",
+        desc: "After trying a brute force attack for educational purposes, I also sought to counter this type of attack, one solution being to have a strong password. So I made a password generator in Python. I'm considering putting it on an HTML page in the future.",
+        images: ["../img/generateur_mdp/generateur_mdp_1.png", "../img/generateur_mdp/generateur_mdp_2.png"],
         github: "https://github.com/RedFoxou06/generateur_mdp"
     },
     {
         id: 6,
-        title: "Convertisseur",
+        title: "Converter",
         languages: ["HTML", "CSS", "Javascript"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["Intellij", "Git"],
-        thumb: "img/convertisseur/logo_convertisseur.png",
-        desc: "Ayant toujours aimé les codes comme dans les films d'agents secrets. J'ai créé mon propre code. Chaque code de chaque caractère a été généré par mon propre générateur de mot de passe après avoir modifié la longueur souhaitée.",
-        images: ["img/convertisseur/convertisseur_1.png", "img/convertisseur/convertisseur_2.png"],
+        thumb: "../img/convertisseur/logo_convertisseur.png",
+        desc: "Having always loved codes like in secret agent movies, I created my own code. Each character code was generated by my own password generator after modifying the desired length.",
+        images: ["../img/convertisseur/convertisseur_1.png", "../img/convertisseur/convertisseur_2.png"],
         github: "https://github.com/RedFoxou06/convertisseur",
         link: "https://convertisseur.redfoxou.dev"
     },
     {
         id: 7,
-        title: "Lecteur MP3",
+        title: "MP3 Player",
         languages: ["Python"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["Pycharm", "Git"],
-        thumb: "img/lecteur_mp3/lecteur_mp3.jpg",
-        desc: "J'ai créé un lecteur mp3 fonctionnel. Il ne s'agit que d'un squelette sans design et une des fonctionnalités ne marche pas. On peut notamment charger des fichiers mp3 dedans, les écouter, régler le volume et quelques d'autre options basiques.",
-        images: ["img/lecteur_mp3/lecteur_mp3_1.png"],
+        thumb: "../img/lecteur_mp3/lecteur_mp3.jpg",
+        desc: "I created a functional MP3 player. It is just a skeleton without design, and one feature doesn't work. You can load MP3 files, listen to them, adjust volume, and use a few other basic options.",
+        images: ["../img/lecteur_mp3/lecteur_mp3_1.png"],
         github: "https://github.com/RedFoxou06/music-player-python"
     },
     {
         id: 8,
         title: "Bomberman",
         languages: ["Java", "JavaFX", "FXML"],
-        type: ["Scolaire"],
+        type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/bomberman/logo_bomberman.png",
-        desc: "Nous avons codé en cours un bomberman avec JavaFX et SceneBuilder. Il ne s'agit que de l'affichage du plateau, avec le personnage et des ennemis ainsi que de l'explosion des bombes. Il nous sera demandé cette année de l'améliorer et le finir.",
-        images: ["img/bomberman/bomberman_1.png", "img/bomberman/bomberman_2.png"],
+        thumb: "../img/bomberman/logo_bomberman.png",
+        desc: "We coded a Bomberman in class using JavaFX and SceneBuilder. It currently only features the board display, the character, enemies, and bomb explosions. We will be asked to improve and finish it this year.",
+        images: ["../img/bomberman/bomberman_1.png", "../img/bomberman/bomberman_2.png"],
         github: "https://github.com/RedFoxou06/Bomberman"
     },
     {
         id: 9,
-        title: "Gestion d'eau",
+        title: "Water Management",
         languages: ["Java", "JavaFX", "FXML"],
-        type: ["Scolaire"],
+        type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/gestion_eau/logo_gestion_eau.png",
-        desc: "Cette application a été réalisé en groupe lors de projets donnés par notre université. C'est une application simple permettant de gérer les stocks d'eau, les différents clients et les différentes commandes. Travailler en groupe nous a surtout appris à nous coordonner et à utiliser git.",
-        images: ["img/gestion_eau/gestion_eau_1.png", "img/gestion_eau/gestion_eau_2.png", "img/gestion_eau/gestion_eau_3.png", "img/gestion_eau/gestion_eau_4.png"],
+        thumb: "../img/gestion_eau/logo_gestion_eau.png",
+        desc: "This application was created in a group during university projects. It's a simple app to manage water stocks, clients, and orders. Working in a group mainly taught us coordination and Git usage.",
+        images: ["../img/gestion_eau/gestion_eau_1.png", "../img/gestion_eau/gestion_eau_2.png", "../img/gestion_eau/gestion_eau_3.png", "../img/gestion_eau/gestion_eau_4.png"],
         github: "https://github.com/RedFoxou06/appli-de-gestion-d-eau"
     },
     {
         id: 10,
-        title: "Jeu 2048",
+        title: "2048 Game",
         languages: ["Java", "JavaFX", "FXML"],
-        type: ["Scolaire"],
+        type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/jeu_2048/logo_jeu_2048.png",
-        desc: "Il s'agit du jeu classique 2048. Le but est de déplacer les cases sur la grille pour les combiner et atteindre la case 2048. On gagne lorsque cette case apparaît, mais on peut continuer à jouer pour obtenir des scores encore plus élevés. Ce jeu est utile pour entraîner sa stratégie et sa réflexion logique.",
-        images: ["img/jeu_2048/jeu_2048_1.png"],
+        thumb: "../img/jeu_2048/logo_jeu_2048.png",
+        desc: "This is the classic 2048 game. The goal is to move tiles on the grid to combine them and reach the 2048 tile. You win when this tile appears, but you can keep playing for higher scores. This game is useful for training strategy and logical thinking.",
+        images: ["../img/jeu_2048/jeu_2048_1.png"],
         github: "https://github.com/RedFoxou06/jeu-2048"
     },
     {
         id: 11,
         title: "Lights Off",
         languages: ["Java", "JavaFX", "FXML"],
-        type: ["Scolaire"],
+        type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/lights_off/logo_lights_off.png",
-        desc: "Il s'agit du jeu classique Lights Off. Le but est de cliquer sur une lumière pour changer son état ainsi que celui de ses voisins. On gagne lorsque toutes les lumières sont éteintes. C’est un excellent jeu pour entraîner sa logique et sa manière de penser.",
-        images: ["img/lights_off/lights_off_1.png"],
+        thumb: "../img/lights_off/logo_lights_off.png",
+        desc: "This is the classic Lights Off game. The goal is to click a light to toggle its state and its neighbors. You win when all lights are turned off. It's an excellent game to train logic and thinking skills.",
+        images: ["../img/lights_off/lights_off_1.png"],
         github: "https://github.com/RedFoxou06/lights-off"
     },
     {
         id: 12,
         title: "Dashboard",
         languages: ["PHP", "HTML", "CSS", "Javascript"],
-        type: ["Personnel"],
+        type: ["Personal"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/dashboard/dashboard.jpg",
-        desc: "Il s'agit d'une application web qui me sert de dashboard pour suivre mes projets. Elle permet d'ajouter une tâche ainsi qu'une date limite. On peut ensuite modifier l'état de cette tâche : si elle est à faire, en cours ou terminé.",
-        images: ["img/dashboard/dashboard_1.png"],
+        thumb: "../img/dashboard/dashboard.jpg",
+        desc: "This is a web application that serves as a dashboard to track my projects. It allows adding a task and a deadline. You can then modify the status of this task: to do, in progress, or finished.",
+        images: ["../img/dashboard/dashboard_1.png"],
         github: "https://github.com/RedFoxou06/dashboard",
         link: "https://dashboard.redfoxou.dev"
     }
@@ -221,7 +221,7 @@ function renderProjects() {
     });
 
     if (filtered.length === 0) {
-        gallery.innerHTML = `<div class="no-results">Aucun projet ne correspond exactement à ces critères.</div>`;
+        gallery.innerHTML = `<div class="no-results">No projects match these criteria exactly.</div>`;
         return;
     }
 
@@ -265,18 +265,19 @@ function openModal(p) {
         buttonsHTML += `
             <a href="${p.link}" target="_blank" class="btn-modal btn-web">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                Voir en ligne
+                View Online
             </a>`;
     }
 
+    // Traduction ici : "Screenshot" au lieu de "Capture d'écran" et "No screenshots available"
     const galleryHTML = p.images && p.images.length > 0
-        ? p.images.map(src => `<img src="${src}" alt="Capture d'écran">`).join('')
-        : '<p style="font-style:italic; color:#aaa;">Pas de captures d\'écran disponibles.</p>';
+        ? p.images.map(src => `<img src="${src}" alt="Screenshot">`).join('')
+        : '<p style="font-style:italic; color:#aaa;">No screenshots available.</p>';
 
     const modalScroll = document.querySelector('.modal-scroll');
     modalScroll.innerHTML = `
         <div class="modal-header-section">
-            <img src="${p.thumb}" class="modal-logo" alt="Logo du projet">
+            <img src="${p.thumb}" class="modal-logo" alt="Project Logo">
             <div class="modal-header-info">
                 <h2 id="m-title">${p.title}</h2>
                 <div class="modal-tags">${tagsHTML}</div>
@@ -287,7 +288,7 @@ function openModal(p) {
             <p id="m-desc">${p.desc}</p>
         </div>
         <div class="modal-gallery-section">
-            <span class="gallery-title">Aperçus</span>
+            <span class="gallery-title">Previews</span>
             <div class="screenshots-grid">
                 ${galleryHTML}
             </div>
