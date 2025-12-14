@@ -50,10 +50,10 @@ const projects = [
         title: "Générateur de mot de passe",
         languages: ["Python"],
         type: ["Personnel"],
-        software: ["VS Code", "Git"],
+        software: ["VS Code", "PyInstaller", "Git"],
         thumb: "img/generateur_mdp/logo_generateur_mdp.png",
-        desc: "Après avoir essayé une attaque brute force à but éducatif. J'ai également cherché à contrer ce genre d'attaque, une des solutions étant d'avoir un mot de passe solide. J'ai donc fait un générateur de mot de passe en python. À voir pour le mettre sur une page HTML dans le futur.",
-        images: ["img/generateur_mdp/generateur_mdp_1.png", "img/generateur_mdp/generateur_mdp_2.png"],
+        desc: "Après avoir essayé une attaque brute force à but éducatif. J'ai également cherché à contrer ce genre d'attaque, une des solutions étant d'avoir un mot de passe solide. J'ai donc fait un générateur de mot de passe en python et j'en ai fait une vraie application qui génèrent un mot de passe selon certains critères que l'on peut sélectionnés. À voir pour le mettre sur une page HTML dans le futur.",
+        images: ["img/generateur_mdp/generateur_mdp_1.png", "img/generateur_mdp/generateur_mdp_2.png", "img/generateur_mdp/generateur_mdp_3.png", "img/generateur_mdp/generateur_mdp_4.png"],
         github: "https://github.com/RedFoxou06/generateur_mdp"
     },
     {
