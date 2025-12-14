@@ -5,34 +5,34 @@ const projects = [
         languages: ["HTML", "CSS", "JS"],
         type: ["Personal"],
         software: ["Intellij" , "Git"],
-        thumb: "../img/homepage/logo_homepage.png", // J'ai ajouté ../ au cas où tu es dans le dossier /en/
-        desc: "I created a homepage for my desktop PC. This homepage allows me to open applications via buttons accessible on the page or suggests ideas when I'm bored. I also added a dark mode for late-night use.",
-        images: ["../img/homepage/mode-clair.png", "../img/homepage/mode-sombre.png"],
+        thumb: "img/homepage/logo_homepage.png",
+        desc: "I created a homepage for my desktop PC. It allows me to launch applications via accessible buttons or suggests ideas when I'm bored. I also added a dark mode for late-night use.",
+        images: ["img/homepage/mode-clair.png", "img/homepage/mode-sombre.png"],
         github: "https://github.com/RedFoxou06/HomePage",
         link: "https://homepage.redfoxou.dev"
     },
     {
         id: 2,
-        title: "ValoApp",
-        languages: ["Java", "JavaFX", "FXML"],
+        title: "Dashboard",
+        languages: ["PHP", "HTML", "CSS", "Javascript"],
         type: ["Personal"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "../img/valorant/logo_valorant.png",
-        desc: "I created an application for one of my favorite games: Valorant. It is a Valorant account management app. This application is not finished, but I find it important to show it because creating it taught me a lot.",
-        images: ["../img/valorant/valorant_1.png"],
-        github: "https://github.com/RedFoxou06/ValoApp"
+        thumb: "img/dashboard/dashboard.jpg",
+        desc: "This is a web application acting as a dashboard to track my projects. It allows adding tasks with deadlines. You can modify the status of a task: to do, in progress, or finished.",
+        images: ["img/dashboard/dashboard_1.png"],
+        github: "https://github.com/RedFoxou06/dashboard",
+        link: "https://dashboard.redfoxou.dev"
     },
     {
         id: 3,
-        title: "Valorant Website",
-        languages: ["HTML", "CSS", "JS"],
+        title: "MP3 Player",
+        languages: ["Python"],
         type: ["Personal"],
-        software: ["Intellij" , "Git"],
-        thumb: "../img/site_valo/logo_valorant_site.png",
-        desc: "A small website about Valorant where I present my favorite characters or maps. I also present my game statistics as well as those of one of my alt accounts. I do play other games, but it's certainly one where I've spent the most time and means a lot to me.",
-        images: ["../img/site_valo/site_valo_1.png", "../img/site_valo/site_valo_2.png"],
-        github: "https://github.com/RedFoxou06/site-valo",
-        link: "https://valorant.redfoxou.dev"
+        software: ["Pycharm", "Git"],
+        thumb: "img/lecteur_mp3/lecteur_mp3.jpg",
+        desc: "I created a functional MP3 player. It is currently a skeleton without a design, and one feature is not working yet. You can load MP3 files, listen to them, adjust volume, and use other basic options.",
+        images: ["img/lecteur_mp3/lecteur_mp3_1.png"],
+        github: "https://github.com/RedFoxou06/music-player-python"
     },
     {
         id: 4,
@@ -40,9 +40,9 @@ const projects = [
         languages: ["Python"],
         type: ["Personal"],
         software: ["PyCharm" , "Git" , "ChatGPT"],
-        thumb: "../img/brut_force/logo_brut_force.png",
-        desc: "I love cybersecurity and wanted to test a brute force attack. So I wrote a Python program to attempt to guess a password I initialized. I also asked ChatGPT for a similar but more performant program. Comparing our programs helped me understand certain mistakes I made. This project is educational; I do not use it to harm or share it as a hacking tool.",
-        images: ["../img/brut_force/brut_force_1.png", "../img/brut_force/brut_force_2.png", "../img/brut_force/brut_force_3.png", "../img/brut_force/brut_force_4.png"],
+        thumb: "img/brut_force/logo_brut_force.png",
+        desc: "I love cybersecurity and wanted to test a brute force attack. I wrote a Python program to guess a preset password. I also asked ChatGPT for a similar but more efficient program. Comparing them helped me understand my mistakes. This project is educational; I do not use it for harm.",
+        images: ["img/brut_force/brut_force_1.png", "img/brut_force/brut_force_2.png", "img/brut_force/brut_force_3.png", "img/brut_force/brut_force_4.png"],
         github: "https://github.com/RedFoxou06/brut_force"
     },
     {
@@ -51,9 +51,9 @@ const projects = [
         languages: ["Python"],
         type: ["Personal"],
         software: ["VS Code", "Git"],
-        thumb: "../img/generateur_mdp/logo_generateur_mdp.png",
-        desc: "After trying a brute force attack for educational purposes, I also sought to counter this type of attack, one solution being to have a strong password. So I made a password generator in Python. I'm considering putting it on an HTML page in the future.",
-        images: ["../img/generateur_mdp/generateur_mdp_1.png", "../img/generateur_mdp/generateur_mdp_2.png"],
+        thumb: "img/generateur_mdp/logo_generateur_mdp.png",
+        desc: "After testing a brute force attack for educational purposes, I looked into how to counter such attacks. One solution is having a strong password. So, I made a password generator in Python. I plan to integrate it into a webpage in the future.",
+        images: ["img/generateur_mdp/generateur_mdp_1.png", "img/generateur_mdp/generateur_mdp_2.png"],
         github: "https://github.com/RedFoxou06/generateur_mdp"
     },
     {
@@ -62,33 +62,34 @@ const projects = [
         languages: ["HTML", "CSS", "Javascript"],
         type: ["Personal"],
         software: ["Intellij", "Git"],
-        thumb: "../img/convertisseur/logo_convertisseur.png",
-        desc: "Having always loved codes like in secret agent movies, I created my own code. Each character code was generated by my own password generator after modifying the desired length.",
-        images: ["../img/convertisseur/convertisseur_1.png", "../img/convertisseur/convertisseur_2.png"],
+        thumb: "img/convertisseur/logo_convertisseur.png",
+        desc: "I've always loved secret codes like in spy movies, so I created my own. The code for each character was generated by my own password generator after adjusting the desired length.",
+        images: ["img/convertisseur/convertisseur_1.png", "img/convertisseur/convertisseur_2.png"],
         github: "https://github.com/RedFoxou06/convertisseur",
         link: "https://convertisseur.redfoxou.dev"
     },
     {
         id: 7,
-        title: "MP3 Player",
-        languages: ["Python"],
+        title: "ValoApp",
+        languages: ["Java", "JavaFX", "FXML"],
         type: ["Personal"],
-        software: ["Pycharm", "Git"],
-        thumb: "../img/lecteur_mp3/lecteur_mp3.jpg",
-        desc: "I created a functional MP3 player. It is just a skeleton without design, and one feature doesn't work. You can load MP3 files, listen to them, adjust volume, and use a few other basic options.",
-        images: ["../img/lecteur_mp3/lecteur_mp3_1.png"],
-        github: "https://github.com/RedFoxou06/music-player-python"
+        software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
+        thumb: "img/valorant/logo_valorant.png",
+        desc: "I built an application based on one of my favorite games: Valorant. It is a Valorant account management app. It is not finished, but I display it because creating it taught me a lot.",
+        images: ["/img/valorant/valorant_1.png"],
+        github: "https://github.com/RedFoxou06/ValoApp"
     },
     {
         id: 8,
-        title: "Bomberman",
-        languages: ["Java", "JavaFX", "FXML"],
-        type: ["Academic"],
-        software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "../img/bomberman/logo_bomberman.png",
-        desc: "We coded a Bomberman in class using JavaFX and SceneBuilder. It currently only features the board display, the character, enemies, and bomb explosions. We will be asked to improve and finish it this year.",
-        images: ["../img/bomberman/bomberman_1.png", "../img/bomberman/bomberman_2.png"],
-        github: "https://github.com/RedFoxou06/Bomberman"
+        title: "Valorant Site",
+        languages: ["HTML", "CSS", "JS"],
+        type: ["Personal"],
+        software: ["Intellij" , "Git"],
+        thumb: "img/site_valo/logo_valorant_site.png",
+        desc: "A small website about Valorant where I present my favorite characters and maps. I also display my stats and those of an alt account. I play other games, but this is one where I've spent the most time and it means a lot to me.",
+        images: ["img/site_valo/site_valo_1.png", "img/site_valo/site_valo_2.png"],
+        github: "https://github.com/RedFoxou06/site-valo",
+        link: "https://valorant.redfoxou.dev"
     },
     {
         id: 9,
@@ -96,9 +97,9 @@ const projects = [
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "../img/gestion_eau/logo_gestion_eau.png",
-        desc: "This application was created in a group during university projects. It's a simple app to manage water stocks, clients, and orders. Working in a group mainly taught us coordination and Git usage.",
-        images: ["../img/gestion_eau/gestion_eau_1.png", "../img/gestion_eau/gestion_eau_2.png", "../img/gestion_eau/gestion_eau_3.png", "../img/gestion_eau/gestion_eau_4.png"],
+        thumb: "img/gestion_eau/logo_gestion_eau.png",
+        desc: "This application was made in a group for a university project. It's a simple app to manage water stocks, clients, and orders. Working in a group taught us coordination and how to use Git effectively.",
+        images: ["img/gestion_eau/gestion_eau_1.png", "img/gestion_eau/gestion_eau_2.png", "img/gestion_eau/gestion_eau_3.png", "img/gestion_eau/gestion_eau_4.png"],
         github: "https://github.com/RedFoxou06/appli-de-gestion-d-eau"
     },
     {
@@ -107,9 +108,9 @@ const projects = [
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "../img/jeu_2048/logo_jeu_2048.png",
-        desc: "This is the classic 2048 game. The goal is to move tiles on the grid to combine them and reach the 2048 tile. You win when this tile appears, but you can keep playing for higher scores. This game is useful for training strategy and logical thinking.",
-        images: ["../img/jeu_2048/jeu_2048_1.png"],
+        thumb: "img/jeu_2048/logo_jeu_2048.png",
+        desc: "This is the classic 2048 game. The goal is to move tiles on a grid to combine them and reach the 2048 tile. You win when it appears, but can continue for a higher score. Great for training strategy and logical thinking.",
+        images: ["img/jeu_2048/jeu_2048_1.png"],
         github: "https://github.com/RedFoxou06/jeu-2048"
     },
     {
@@ -118,22 +119,21 @@ const projects = [
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Academic"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "../img/lights_off/logo_lights_off.png",
-        desc: "This is the classic Lights Off game. The goal is to click a light to toggle its state and its neighbors. You win when all lights are turned off. It's an excellent game to train logic and thinking skills.",
-        images: ["../img/lights_off/lights_off_1.png"],
+        thumb: "img/lights_off/logo_lights_off.png",
+        desc: "This is the classic Lights Off game. The goal is to click a light to toggle its state and its neighbors'. You win when all lights are off. It's an excellent game for logic and thinking skills.",
+        images: ["img/lights_off/lights_off_1.png"],
         github: "https://github.com/RedFoxou06/lights-off"
     },
     {
         id: 12,
-        title: "Dashboard",
-        languages: ["PHP", "HTML", "CSS", "Javascript"],
-        type: ["Personal"],
-        software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "../img/dashboard/dashboard.jpg",
-        desc: "This is a web application that serves as a dashboard to track my projects. It allows adding a task and a deadline. You can then modify the status of this task: to do, in progress, or finished.",
-        images: ["../img/dashboard/dashboard_1.png"],
-        github: "https://github.com/RedFoxou06/dashboard",
-        link: "https://dashboard.redfoxou.dev"
+        title: "Bomberman",
+        languages: ["Java", "JavaFX", "FXML"],
+        type: ["Academic"],
+        software: ["Intellij", "Git", "Scene Builder", "Gradle"],
+        thumb: "img/bomberman/logo_bomberman.png",
+        desc: "We coded a Bomberman game in class using JavaFX and SceneBuilder. It currently handles board display, characters, enemies, and bomb explosions. We are required to improve and finish it this year.",
+        images: ["img/bomberman/bomberman_1.png", "img/bomberman/bomberman_2.png"],
+        github: "https://github.com/RedFoxou06/Bomberman"
     }
 ];
 
@@ -221,7 +221,7 @@ function renderProjects() {
     });
 
     if (filtered.length === 0) {
-        gallery.innerHTML = `<div class="no-results">No projects match these criteria exactly.</div>`;
+        gallery.innerHTML = `<div class="no-results">No projects exactly match these criteria.</div>`;
         return;
     }
 
@@ -269,7 +269,6 @@ function openModal(p) {
             </a>`;
     }
 
-    // Traduction ici : "Screenshot" au lieu de "Capture d'écran" et "No screenshots available"
     const galleryHTML = p.images && p.images.length > 0
         ? p.images.map(src => `<img src="${src}" alt="Screenshot">`).join('')
         : '<p style="font-style:italic; color:#aaa;">No screenshots available.</p>';

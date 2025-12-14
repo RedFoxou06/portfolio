@@ -13,26 +13,26 @@ const projects = [
     },
     {
         id: 2,
-        title: "ValoApp",
-        languages: ["Java", "JavaFX", "FXML"],
+        title: "Dashboard",
+        languages: ["PHP", "HTML", "CSS", "Javascript"],
         type: ["Personnel"],
         software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/valorant/logo_valorant.png",
-        desc: "J'ai réalisé une application sur un de mes jeux préféré : Valorant. Il s'agit d'une application de gestion de compte Valorant. Cette application n'est pas finie mais je trouve important de le montrer car la créer m'a beaucoup appris.",
-        images: ["/img/valorant/valorant_1.png"],
-        github: "https://github.com/RedFoxou06/ValoApp"
+        thumb: "img/dashboard/dashboard.jpg",
+        desc: "Il s'agit d'une application web qui me sert de dashboard pour suivre mes projets. Elle permet d'ajouter une tâche ainsi qu'une date limite. On peut ensuite modifier l'état de cette tâche : si elle est à faire, en cours ou terminé.",
+        images: ["img/dashboard/dashboard_1.png"],
+        github: "https://github.com/RedFoxou06/dashboard",
+        link: "https://dashboard.redfoxou.dev"
     },
     {
         id: 3,
-        title: "Site Valorant",
-        languages: ["HTML", "CSS", "JS"],
+        title: "Lecteur MP3",
+        languages: ["Python"],
         type: ["Personnel"],
-        software: ["Intellij" , "Git"],
-        thumb: "img/site_valo/logo_valorant_site.png",
-        desc: "Un petit site sur Valorant où je présente mes personnages ou maps préférés. J'y présente également mes statistiques sur le jeu ainsi que celle d'un de mes doubles comptes. Je joue quand même à d'autres jeux que Valorant mais c'est certainement un des jeux où j'ai passé le plus de temps et qui compte beaucoup pour moi.",
-        images: ["img/site_valo/site_valo_1.png", "img/site_valo/site_valo_2.png"],
-        github: "https://github.com/RedFoxou06/site-valo",
-        link: "https://valorant.redfoxou.dev"
+        software: ["Pycharm", "Git"],
+        thumb: "img/lecteur_mp3/lecteur_mp3.jpg",
+        desc: "J'ai créé un lecteur mp3 fonctionnel. Il ne s'agit que d'un squelette sans design et une des fonctionnalités ne marche pas. On peut notamment charger des fichiers mp3 dedans, les écouter, régler le volume et quelques d'autre options basiques.",
+        images: ["img/lecteur_mp3/lecteur_mp3_1.png"],
+        github: "https://github.com/RedFoxou06/music-player-python"
     },
     {
         id: 4,
@@ -70,25 +70,26 @@ const projects = [
     },
     {
         id: 7,
-        title: "Lecteur MP3",
-        languages: ["Python"],
+        title: "ValoApp",
+        languages: ["Java", "JavaFX", "FXML"],
         type: ["Personnel"],
-        software: ["Pycharm", "Git"],
-        thumb: "img/lecteur_mp3/lecteur_mp3.jpg",
-        desc: "J'ai créé un lecteur mp3 fonctionnel. Il ne s'agit que d'un squelette sans design et une des fonctionnalités ne marche pas. On peut notamment charger des fichiers mp3 dedans, les écouter, régler le volume et quelques d'autre options basiques.",
-        images: ["img/lecteur_mp3/lecteur_mp3_1.png"],
-        github: "https://github.com/RedFoxou06/music-player-python"
+        software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
+        thumb: "img/valorant/logo_valorant.png",
+        desc: "J'ai réalisé une application sur un de mes jeux préféré : Valorant. Il s'agit d'une application de gestion de compte Valorant. Cette application n'est pas finie mais je trouve important de le montrer car la créer m'a beaucoup appris.",
+        images: ["/img/valorant/valorant_1.png"],
+        github: "https://github.com/RedFoxou06/ValoApp"
     },
     {
         id: 8,
-        title: "Bomberman",
-        languages: ["Java", "JavaFX", "FXML"],
-        type: ["Scolaire"],
-        software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/bomberman/logo_bomberman.png",
-        desc: "Nous avons codé en cours un bomberman avec JavaFX et SceneBuilder. Il ne s'agit que de l'affichage du plateau, avec le personnage et des ennemis ainsi que de l'explosion des bombes. Il nous sera demandé cette année de l'améliorer et le finir.",
-        images: ["img/bomberman/bomberman_1.png", "img/bomberman/bomberman_2.png"],
-        github: "https://github.com/RedFoxou06/Bomberman"
+        title: "Site Valorant",
+        languages: ["HTML", "CSS", "JS"],
+        type: ["Personnel"],
+        software: ["Intellij" , "Git"],
+        thumb: "img/site_valo/logo_valorant_site.png",
+        desc: "Un petit site sur Valorant où je présente mes personnages ou maps préférés. J'y présente également mes statistiques sur le jeu ainsi que celle d'un de mes doubles comptes. Je joue quand même à d'autres jeux que Valorant mais c'est certainement un des jeux où j'ai passé le plus de temps et qui compte beaucoup pour moi.",
+        images: ["img/site_valo/site_valo_1.png", "img/site_valo/site_valo_2.png"],
+        github: "https://github.com/RedFoxou06/site-valo",
+        link: "https://valorant.redfoxou.dev"
     },
     {
         id: 9,
@@ -125,15 +126,14 @@ const projects = [
     },
     {
         id: 12,
-        title: "Dashboard",
-        languages: ["PHP", "HTML", "CSS", "Javascript"],
-        type: ["Personnel"],
-        software: ["Intellij" , "Git" , "Scene Builder", "Gradle"],
-        thumb: "img/dashboard/dashboard.jpg",
-        desc: "Il s'agit d'une application web qui me sert de dashboard pour suivre mes projets. Elle permet d'ajouter une tâche ainsi qu'une date limite. On peut ensuite modifier l'état de cette tâche : si elle est à faire, en cours ou terminé.",
-        images: ["img/dashboard/dashboard_1.png"],
-        github: "https://github.com/RedFoxou06/dashboard",
-        link: "https://dashboard.redfoxou.dev"
+        title: "Bomberman",
+        languages: ["Java", "JavaFX", "FXML"],
+        type: ["Scolaire"],
+        software: ["Intellij", "Git", "Scene Builder", "Gradle"],
+        thumb: "img/bomberman/logo_bomberman.png",
+        desc: "Nous avons codé en cours un bomberman avec JavaFX et SceneBuilder. Il ne s'agit que de l'affichage du plateau, avec le personnage et des ennemis ainsi que de l'explosion des bombes. Il nous sera demandé cette année de l'améliorer et le finir.",
+        images: ["img/bomberman/bomberman_1.png", "img/bomberman/bomberman_2.png"],
+        github: "https://github.com/RedFoxou06/Bomberman"
     }
 ];
 

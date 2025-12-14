@@ -337,6 +337,8 @@ header.hidden {
     border-radius: 50%;
     background: rgba(255,255,255,0.8);
     transition: 0.3s;
+    line-height: 1;
+    padding-bottom: 4px;
 }
 
 .close-modal:hover { color: var(--primary); transform: rotate(90deg); }
