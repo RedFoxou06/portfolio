@@ -16,7 +16,7 @@ const projects = [
         title: "Dashboard",
         languages: ["PHP", "HTML", "CSS", "JavaScript"],
         type: ["Personnel"],
-        software: ["IntelliJ" , "Git" , "Scene Builder", "Gradle"],
+        software: ["IntelliJ" , "Git"],
         thumb: "img/dashboard/dashboard.jpg",
         desc: "Il s'agit d'une application web qui me sert de dashboard pour suivre mes projets. Elle permet d'ajouter une tâche ainsi qu'une date limite. On peut ensuite modifier l'état de cette tâche : si elle est à faire, en cours ou terminée.",
         images: ["img/dashboard/dashboard_1.png"],
