@@ -134,6 +134,17 @@ const projects = [
         desc: "Nous avons codé en cours un bomberman avec JavaFX et SceneBuilder. Il ne s'agit que de l'affichage du plateau, avec le personnage et des ennemis ainsi que de l'explosion des bombes. Il nous sera demandé cette année de l'améliorer et le finir.",
         images: ["img/bomberman/bomberman_1.png", "img/bomberman/bomberman_2.png"],
         github: "https://github.com/RedFoxou06/Bomberman"
+    },
+    {
+        id: 13,
+        title: "JamYard",
+        languages: ["PHP", "Laravel", "CSS"],
+        type: ["Scolaire"],
+        software: ["PhpStorm", "Git"],
+        thumb: "img/jamyard/jamyard_logo.png",
+        desc: "Réalisation d'un projet web complet dans un temps imparti très restreint. L'objectif de ce Marathon était de concevoir, développer et déployer une application fonctionnelle de A à Z. Mon groupe et moi avons crée JamYard, une plateforme de partage musical. Ce projet a mis à l'épreuve ma réactivité technique sous Laravel et ma capacité à traduire une identité visuelle forte en un site web ergonomique et sécurisé.",
+        images: ["img/jamyard/jamyard_1.png", "img/jamyard/jamyard_2.png", "img/jamyard/jamyard_3.png"],
+        github: "https://github.com/RedFoxou06/marathon-web"
     }
 ];
 

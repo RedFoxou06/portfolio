@@ -134,6 +134,17 @@ const projects = [
         desc: "We coded a Bomberman game in class using JavaFX and SceneBuilder. It currently handles board display, characters, enemies, and bomb explosions. We are required to improve and finish it this year.",
         images: ["../bomberman/bomberman_1.png", "../img/bomberman/bomberman_2.png"],
         github: "https://github.com/RedFoxou06/Bomberman"
+    },
+    {
+        id: 13,
+        title: "JamYard",
+        languages: ["PHP", "Laravel", "CSS"],
+        type: ["Academic"],
+        software: ["PhpStorm", "Git"],
+        thumb: "../img/jamyard/jamyard_logo.png",
+        desc: "Development of a comprehensive web project within a very limited timeframe. The goal of this 'Web Marathon' was to design, develop, and deploy a functional application from scratch. My team and I created JamYard, a music-sharing platform. This project challenged my technical agility with Laravel and my ability to translate a bold visual identity into a user-friendly and secure website.",
+        images: ["../img/jamyard/jamyard_1.png", "../img/jamyard/jamyard_2.png", "../img/jamyard/jamyard_3.png"],
+        github: "https://github.com/RedFoxou06/marathon-web"
     }
 ];
 
