@@ -25,6 +25,17 @@ const projects = [
     },
     {
         id: 3,
+        title:"Générateur de QRCode",
+        languages: ["Python"],
+        type: ["Personal"],
+        software: ["PyCharm", "Git"],
+        thumb: "img/qrcode/qrcode.png",
+        desc: "Un utilitaire Desktop minimaliste conçu pour transformer instantanément vos liens en QR codes. L'application automatise intelligemment le nommage et l'enregistrement des fichiers directement dans le dossier Téléchargements, tout en offrant un aperçu visuel en temps réel. Entièrement développé en Python, le projet est packagé en un exécutable autonome (.exe) pour une portabilité totale sans installation.",
+        images: ["img/qrcode/qrcode_1.png"],
+        github: "https://github.com/RedFoxou06/generateurQRCode"
+    },
+    {
+        id: 4,
         title: "Lecteur MP3",
         languages: ["Python"],
         type: ["Personnel"],
@@ -35,7 +46,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/music-player-python"
     },
     {
-        id: 4,
+        id: 5,
         title: "Attaque brute force",
         languages: ["Python"],
         type: ["Personnel"],
@@ -46,7 +57,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/brut_force"
     },
     {
-        id: 5,
+        id: 6,
         title: "Générateur de mot de passe",
         languages: ["Python"],
         type: ["Personnel"],
@@ -57,7 +68,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/generateur_mdp"
     },
     {
-        id: 6,
+        id: 7,
         title: "Convertisseur",
         languages: ["HTML", "CSS", "JavaScript"],
         type: ["Personnel"],
@@ -69,7 +80,7 @@ const projects = [
         link: "https://convertisseur.redfoxou.dev"
     },
     {
-        id: 7,
+        id: 8,
         title: "ValoApp",
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Personnel"],
@@ -80,7 +91,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/ValoApp"
     },
     {
-        id: 8,
+        id: 9,
         title: "Site Valorant",
         languages: ["HTML", "CSS", "JS"],
         type: ["Personnel"],
@@ -92,7 +103,7 @@ const projects = [
         link: "https://valorant.redfoxou.dev"
     },
     {
-        id: 9,
+        id: 10,
         title: "Gestion d'eau",
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Scolaire"],
@@ -103,7 +114,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/appli-de-gestion-d-eau"
     },
     {
-        id: 10,
+        id: 11,
         title: "Jeu 2048",
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Scolaire"],
@@ -114,7 +125,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/jeu-2048"
     },
     {
-        id: 11,
+        id: 12,
         title: "Lights Off",
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Scolaire"],
@@ -125,7 +136,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/lights-off"
     },
     {
-        id: 12,
+        id: 13,
         title: "Bomberman",
         languages: ["Java", "JavaFX", "FXML"],
         type: ["Scolaire"],
@@ -136,7 +147,7 @@ const projects = [
         github: "https://github.com/RedFoxou06/Bomberman"
     },
     {
-        id: 13,
+        id: 14,
         title: "JamYard",
         languages: ["PHP", "Laravel", "CSS"],
         type: ["Scolaire"],
